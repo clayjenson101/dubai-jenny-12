@@ -1,15 +1,17 @@
- <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dubai girl jenny - Telegram queen</title>
-    
-    <!-- Google Fonts for Premium Look -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 1. META PIXEL CODE -->
-    <!-- Meta Pixel Code -->
+  <title>DUBAI GIRL JENNY </title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -26,216 +28,395 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1164094792727587&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    <style>
-        :root {
-            --bg-color: #0b0c10;
-            --card-bg: #151a26;
-            --accent-gold: #ffc107;
-            --text-gold: #f4c430;
-            --btn-blue: #00a2ff;
-        }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+  <style>
+    :root {
+      --bg: #060606;
+      --card: #120802;
+      --orange: #ff8a1f;
+      --orange2: #ffb347;
+      --text: #ffffff;
+      --muted: #ffd7b5;
+    }
 
-        body {
-            background-color: var(--bg-color);
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 15px;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .container {
-            width: 100%;
-            max-width: 450px;
-            text-align: center;
-            padding: 20px;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        .badge {
-            border: 1px solid var(--accent-gold);
-            color: var(--accent-gold);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            display: inline-block;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-        }
+    body {
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background:
+        radial-gradient(circle at top, #1a0c03 0%, #090604 35%, #050505 70%);
+      color: var(--text);
+      overflow-x: hidden;
+    }
 
-        .profile-container {
-            position: relative;
-            width: 150px;
-            height: 150px;
-            margin: 0 auto 15px auto;
-        }
+    .container {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 25px 16px 35px;
+      text-align: center;
+    }
 
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--accent-gold);
-            box-shadow: 0 0 25px rgba(254, 193, 7, 0.4);
-        }
+    /* Avatar */
+    .avatar-wrap {
+      width: 160px;
+      height: 160px;
+      margin: 10px auto 20px;
+      padding: 5px;
+      border-radius: 50%;
+      background: conic-gradient(
+        var(--orange),
+        var(--orange2),
+        #ffffff,
+        var(--orange),
+        var(--orange2)
+      );
+      box-shadow:
+        0 0 25px rgba(255, 138, 31, 0.65),
+        0 0 55px rgba(255, 138, 31, 0.25);
+    }
 
-        h1 {
-            color: var(--text-gold);
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: 0.5px;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-        }
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-        .subtitle {
-            color: #a0a5b5;
-            font-size: 16px;
-            margin-bottom: 25px;
-        }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-bottom: 25px;
-        }
+    /* Agar image nahi lagani hai */
+    .avatar-text {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--orange);
+    }
 
-        .stat-card {
-            background-color: var(--card-bg);
-            padding: 12px 5px;
-            border-radius: 10px;
-        }
+    h1 {
+      margin: 8px 0 6px;
+      font-size: clamp(28px, 8vw, 36px);
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
 
-        .stat-num {
-            color: var(--accent-gold);
-            font-weight: 700;
-            font-size: 16px;
-        }
+    .sub {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.5;
+    }
 
-        .stat-label {
-            color: #7e869a;
-            font-size: 12px;
-            margin-top: 2px;
-        }
+    /* Pills */
+    .pills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
 
-        .features-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 30px;
-        }
+    .pill {
+      padding: 9px 15px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 13px;
+      background: rgba(255, 138, 31, 0.12);
+      border: 1px solid rgba(255, 138, 31, 0.8);
+      box-shadow: 0 0 15px rgba(255, 138, 31, 0.25);
+    }
 
-        .feature-item {
-            background-color: var(--card-bg);
-            padding: 14px 20px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            text-align: left;
-            font-size: 15px;
-            font-weight: 600;
-        }
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 22px 0;
+    }
 
-        .feature-icon {
-            font-size: 18px;
-        }
+    .stat {
+      min-width: 0;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 138, 31, 0.13),
+          rgba(18, 8, 2, 0.95)
+        );
+      border: 1px solid rgba(255, 138, 31, 0.18);
+      border-radius: 15px;
+      padding: 14px 7px;
+      box-shadow: 0 0 20px rgba(255, 138, 31, 0.10);
+    }
 
-        .cta-btn {
-            display: block;
-            background: linear-gradient(90deg, #0088cc, var(--btn-blue));
-            color: white;
-            text-decoration: none;
-            padding: 16px;
-            border-radius: 30px;
-            font-size: 18px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 4px 15px rgba(0, 162, 255, 0.4);
-            transition: transform 0.2s ease;
-            animation: pulse 1.8s infinite;
-        }
+    .stat .big {
+      font-size: clamp(17px, 5vw, 23px);
+      font-weight: 800;
+      color: var(--orange);
+      white-space: nowrap;
+    }
 
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 162, 255, 0.4); }
-            50% { transform: scale(1.03); box-shadow: 0 4px 25px rgba(0, 162, 255, 0.7); }
-            100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 162, 255, 0.4); }
-        }
-    </style>
+    .stat .label {
+      margin-top: 3px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* Join Button */
+    .join {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 58px;
+      gap: 9px;
+      margin: 24px 0;
+      padding: 15px 18px;
+      border-radius: 40px;
+      font-size: 18px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #120802;
+      background: linear-gradient(
+        90deg,
+        var(--orange),
+        var(--orange2)
+      );
+      box-shadow:
+        0 0 20px rgba(255, 138, 31, 0.55),
+        0 0 40px rgba(255, 138, 31, 0.20);
+      transition: 0.25s ease;
+    }
+
+    .join:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 0 30px rgba(255, 138, 31, 0.8),
+        0 0 50px rgba(255, 138, 31, 0.25);
+    }
+
+    .join:active {
+      transform: scale(0.98);
+    }
+
+    /* Feature Cards */
+    .feature {
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 138, 31, 0.10),
+          rgba(18, 8, 2, 0.95)
+        );
+      border: 1px solid rgba(255, 138, 31, 0.15);
+      border-radius: 18px;
+      padding: 17px;
+      margin: 13px 0;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(255, 138, 31, 0.10);
+    }
+
+    .feature h3 {
+      margin-bottom: 6px;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .feature p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 27px;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #facc15;
+    }
+
+    /* Mobile */
+    @media (max-width: 400px) {
+
+      .container {
+        padding: 20px 12px 30px;
+      }
+
+      .avatar-wrap {
+        width: 135px;
+        height: 135px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .sub {
+        font-size: 13px;
+      }
+
+      .pill {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+
+      .stats {
+        gap: 7px;
+      }
+
+      .stat {
+        padding: 12px 5px;
+      }
+
+      .stat .big {
+        font-size: 16px;
+      }
+
+      .stat .label {
+        font-size: 10px;
+      }
+
+      .join {
+        font-size: 16px;
+        min-height: 55px;
+      }
+
+      .feature {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <div class="badge">🏏 India's Elite Cricket Community</div>
+  <div class="container">
 
-        <div class="profile-container">
-            <img src="YOUR_IMAGE_URL_HERE" alt="Dubai girl jenny " class="profile-img">
-        </div>
+    <!-- Avatar / Logo -->
+    <div class="avatar-wrap">
+      <div class="avatar">
 
-        <h1>Dubai girl Jenny </h1>
-        <div class="subtitle">Telegram queen 👑</div>
+        <!--
+          YAHAN APNI IMAGE LAGANI HO TO:
+          <img src="logo.jpg" alt="Bezos Prediction">
+          
+          Agar image nahi hai to neeche wala text use hoga.
+        -->
 
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-num">89%+</div>
-                <div class="stat-label">Accuracy</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">75K+</div>
-                <div class="stat-label">Members</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">Daily</div>
-                <div class="stat-label">Tips</div>
-            </div>
-        </div>
+        <div class="avatar-text">DGJ</div>
 
-        <div class="features-list">
-            <div class="feature-item">
-                <span class="feature-icon">📈</span>
-                <span>Match Winner Predictions</span>
-            </div>
-            <div class="feature-item">
-                <span class="feature-icon">🎯</span>
-                <span>Premium Session Calls</span>
-            </div>
-            <div class="feature-item">
-                <span class="feature-icon">⛈️</span>
-                <span>Pitch & Weather Analysis</span>
-            </div>
-            <div class="feature-item">
-                <span class="feature-icon">⚡</span>
-                <span>Fast Entry / Exit Updates</span>
-            </div>
-        </div>
-
-        <a href="https://t.me/+JgtYL7IMTNA1YTE1" class="cta-btn" id="joinBtn">
-            Join VIP Channel
-        </a>
+      </div>
     </div>
 
-    <!-- 2. UPDATED SUBSCRIBE PIXEL EVENT SCRIPT -->
-    <script>
-        document.getElementById('joinBtn').addEventListener('click', function(e) {
-            if (typeof fbq !== 'undefined') {
-                fbq('track', 'Subscribe', {
-                    value: 0.00,
-                    currency: 'INR'
-                });
-            }
-        });
-    </script>
+    <!-- Heading -->
+    <h1> DUBAI GIRL JENNY </h1>
+
+    <div class="sub">
+      👥 70K+ Active Members (Verified)
+    </div>
+
+    <!-- Pills -->
+    <div class="pills">
+
+      <div class="pill">
+        🏆 Premium Analyst
+      </div>
+
+      <div class="pill">
+        🚀 Live Updates
+      </div>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+
+      <div class="stat">
+        <div class="big">98K+</div>
+        <div class="label">Match Analysis</div>
+      </div>
+
+      <div class="stat">
+        <div class="big">Expert</div>
+        <div class="label">Insights</div>
+      </div>
+
+      <div class="stat">
+        <div class="big">4.9★</div>
+        <div class="label">User Rating</div>
+      </div>
+
+    </div>
+
+    <!-- Telegram Button -->
+    <a
+      class="join"
+      href="https://t.me/+JgtYL7IMTNA1YTE1"
+      target="_blank"
+      rel="noopener noreferrer"
+      onclick="trackTelegramClick()"
+    >
+      📩 Join Telegram Channel
+    </a>
+
+    <!-- Features -->
+    <div class="feature">
+
+      <h3>
+        ✅ Pre-Match Cricket Analysis
+      </h3>
+
+      <p>
+        Smart & research-based insights before every match.
+      </p>
+
+    </div>
+
+    <div class="feature">
+
+      <h3>
+        🔥 Transparent & Trusted
+      </h3>
+
+      <p>
+        Community-driven cricket analysis with live updates.
+      </p>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2026 Dubai girl jenny • Cricket Analysis Platform
+    </div>
+
+  </div>
+
+  <!-- Telegram Click Tracking -->
+  <script>
+    function trackTelegramClick() {
+
+      if (typeof fbq === "function") {
+        fbq("track", "Lead");
+      }
+
+    }
+  </script>
 
 </body>
 </html>
